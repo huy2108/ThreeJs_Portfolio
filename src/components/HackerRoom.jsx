@@ -13,7 +13,7 @@ const HackerRoom = (props) => {
     const screenTxt = useTexture('textures/desk/screen.png');
 
     return (
-        <group {...props} dispose={null}>
+        <group {...props} dispose={null} scale={0.1}>
             <mesh geometry={nodes.screen_screens_0.geometry} material={materials.screens}>
                 <meshMatcapMaterial map={screenTxt} />
             </mesh>
